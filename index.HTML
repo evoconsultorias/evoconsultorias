@@ -16,42 +16,54 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: url('imagens/DESENHO DA LOGO (SEM FUNDO).png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.3; /* Transparência da logo de fundo */
         }
 
         .container {
             text-align: center;
-            background-color: #2f384b;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
             padding: 50px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 2;
         }
 
         h1 {
             margin-bottom: 40px;
+            color: #001f3f; /* Azul escuro */
         }
 
         .button {
             display: block;
-            background-color: #28a745;
-            color: white;
+            background-color: white;
+            color: #001f3f;
             padding: 15px 30px;
             margin: 20px 0;
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s;
+            border: 2px solid #001f3f;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .button:hover {
-            background-color: #218838;
+            background-color: #001f3f;
+            color: white;
         }
 
         .button-secondary {
-            background-color: #007bff;
+            background-color: white;
+            color: #001f3f;
+            border: 2px solid #001f3f;
         }
 
         .button-secondary:hover {
-            background-color: #0056b3;
+            background-color: #001f3f;
+            color: white;
         }
     </style>
 </head>
