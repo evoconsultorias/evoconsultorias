@@ -15,7 +15,7 @@
         .header {
             background: url('./imagens/c1.jpg') no-repeat center center;
             background-size: cover;
-            height: auto;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,7 +48,7 @@
             border-radius: 8px;
         }
         .about-section {
-            max-width: 500px;
+            max-width: 800px;
             margin: 50px auto;
             text-align: center;
         }
@@ -57,26 +57,38 @@
             margin: 50px;
         }
         .clients-section img {
-            width: 100%;
+            width: 80%;
             max-width: 600px;
             height: auto;
         }
         .vision-section {
-            background: url('./imagens/DESENHO_DA_LOGO_SEM_FUNDO.png') no-repeat center;
+            background: url('./imagens/DESENHO_DA_LOGO_SEM_FUNDO.png') no-repeat center center;
             background-size: cover;
-            opacity: 0.33;
+            position: relative;
             text-align: center;
             padding: 100px 0;
         }
+        .vision-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(20, 20, 20, 0.67);
+            z-index: 1;
+        }
         .vision-section p {
+            position: relative;
             font-size: 28px;
             max-width: 800px;
             margin: 0 auto;
             color: white;
             opacity: 1;
+            z-index: 2;
         }
         .footer {
-            background: url('./imagens/r1.jpg') center;
+            background: url('./imagens/r1.jpg') no-repeat center center;
             background-size: cover;
             height: 300px;
         }
@@ -89,9 +101,9 @@
     </header>
 
     <section class="services-section">
-        <h2 class="section-title">Nossos Serviços</h2>
+        <h2 class="section-title">Nossos serviços</h2>
         <div class="services-container">
-            <img src="./imagens/1.png" alt="Serviço 1">
+            <img src="./imagens/servico_1.jpg" alt="Serviço 1">
             <img src="./imagens/2.png" alt="Serviço 2">
             <img src="./imagens/3.png" alt="Serviço 3">
             <img src="./imagens/4.png" alt="Serviço 4">
