@@ -6,139 +6,118 @@
     <title>Evo Consultorias</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #141414; 
+            background-color: #141414;
             color: white;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-
-        h1, h2 {
-            color: #D3D3D3; 
-            text-align: center;
-        }
-
-        header {
-            background-image: url('imagens/c1.png'); 
+        .header {
+            background: url('c1.jpg') no-repeat center center;
             background-size: cover;
-            background-position: center;
-            padding: 100px 0;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            flex-direction: column;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 50px;
+        .header h1 {
+            font-size: 48px;
+            color: white;
         }
-
-        header p {
+        .header h2 {
             font-size: 24px;
+            color: white;
         }
-
-        section {
-            padding: 40px;
+        .section-title {
+            color: #d3d3d3;
+            font-size: 36px;
             text-align: center;
+            margin-top: 50px;
         }
-
         .services-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
         }
-
         .services-container img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
         }
-
-        .about-us {
+        .about-section {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 50px auto;
             text-align: center;
-            line-height: 1.8;
         }
-
         .clients-section {
-            padding: 40px;
             text-align: center;
+            margin: 50px;
         }
-
         .clients-section img {
-            max-width: 800px;
-            width: 100%;
+            width: 80%;
+            max-width: 600px;
             height: auto;
         }
-
-        .vision {
-            background-image: url('imagens/DESENHO DA LOGO (SEM FUNDO).png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            opacity: 0.33; /* Transparência da logo */
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        footer {
-            background-image: url('imagens/r1.png'); 
+        .vision-section {
+            background: url('DESENHO%20DA%20LOGO%20%28SEM%20FUNDO%29.png') no-repeat center center;
             background-size: cover;
-            background-position: center;
-            padding: 50px;
+            opacity: 0.33;
             text-align: center;
+            padding: 100px 0;
+        }
+        .vision-section p {
+            font-size: 28px;
+            max-width: 800px;
+            margin: 0 auto;
             color: white;
+            opacity: 1;
+        }
+        .footer {
+            background: url('r1.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Cabeçalho -->
-    <header>
+    <header class="header">
         <h1>Evo Consultorias</h1>
-        <p>Evoluindo negócios, impulsionando futuros</p>
+        <h2>Evoluindo negócios, impulsionando futuros</h2>
     </header>
 
-    <!-- Seção de Serviços -->
-    <section>
-        <h2>Nossos Serviços</h2>
+    <section class="services-section">
+        <h2 class="section-title">Nossos serviços</h2>
         <div class="services-container">
-            <img src="imagens/1.png" alt="Serviço 1">
-            <img src="imagens/2.png" alt="Serviço 2">
-            <img src="imagens/3.png" alt="Serviço 3">
-            <img src="imagens/4.png" alt="Serviço 4">
-            <img src="imagens/5.png" alt="Serviço 5">
-            <img src="imagens/6.png" alt="Serviço 6">
-            <img src="imagens/7.png" alt="Serviço 7">
-            <img src="imagens/8.png" alt="Serviço 8">
-            <img src="imagens/9.png" alt="Serviço 9">
+            <img src="1.jpg" alt="Serviço 1">
+            <img src="2.jpg" alt="Serviço 2">
+            <img src="3.jpg" alt="Serviço 3">
+            <img src="4.jpg" alt="Serviço 4">
+            <img src="5.jpg" alt="Serviço 5">
+            <img src="6.jpg" alt="Serviço 6">
+            <img src="7.jpg" alt="Serviço 7">
+            <img src="8.jpg" alt="Serviço 8">
+            <img src="9.jpg" alt="Serviço 9">
         </div>
     </section>
 
-    <!-- Sobre Nós -->
-    <section>
-        <h2>Sobre Nós</h2>
-        <div class="about-us">
-            <p>A Evo é uma empresa especializada em consultoria empresarial e para pessoas físicas, com mais de 10 anos de experiência, que tem como objetivo auxiliar empreendedores e indivíduos a gerir seus negócios e finanças de forma eficiente e estratégica. Nossa equipe é composta por profissionais experientes e qualificados, prontos para oferecer soluções personalizadas e adequadas às necessidades de cada cliente.</p>
-        </div>
+    <section class="about-section">
+        <h2 class="section-title">Sobre nós</h2>
+        <p>A Evo é uma empresa especializada em consultoria empresarial e para pessoas físicas, com mais de 10 anos de experiência, que tem como objetivo auxiliar empreendedores e indivíduos a gerir seus negócios e finanças de forma eficiente e estratégica. Nossa equipe é composta por profissionais experientes e qualificados, prontos para oferecer soluções personalizadas e adequadas às necessidades de cada cliente.</p>
     </section>
 
-    <!-- Clientes -->
     <section class="clients-section">
-        <h2>Alguns dos nossos clientes.</h2>
+        <h2 class="section-title">Alguns dos nossos clientes</h2>
         <p>Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a primeira escolha das seguintes empresas:</p>
-        <img src="imagens/CLIENTES.png" alt="Clientes da Evo Consultorias">
+        <img src="CLIENTES.png" alt="Nossos clientes">
     </section>
 
-    <!-- Visão de Futuro -->
-    <section class="vision">
+    <section class="vision-section">
         <p>Visualize um amanhã onde as fronteiras do seu negócio se expandem sem limites. Na Evo, transformamos essa visão em ação.</p>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Evo Consultorias. Todos os direitos reservados.</p>
-    </footer>
-
+    <footer class="footer"></footer>
 </body>
 </html>
