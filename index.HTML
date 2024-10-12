@@ -3,80 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo Consultorias - Bem-vindo</title>
+    <title>Evo Consultorias</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #141414; 
+            color: white;
             margin: 0;
             padding: 0;
-            background-color: #001f3f; /* Azul marinho */
-            color: white;
+        }
+
+        h1, h2 {
+            color: #D3D3D3; 
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+
+        header {
+            background-image: url('imagens/c1.png'); 
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .services-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-us {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .clients-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .clients-section img {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        }
+
+        .vision {
             background-image: url('imagens/DESENHO DA LOGO (SEM FUNDO).png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            opacity: 0.9; /* Transparência da logo de fundo */
-            z-index: 1;
-        }
-
-        .container {
+            opacity: 0.33; /* Transparência da logo */
+            padding: 100px 0;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+        }
+
+        footer {
+            background-image: url('imagens/r1.png'); 
+            background-size: cover;
+            background-position: center;
             padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 2;
-        }
-
-        h1 {
-            margin-bottom: 40px;
-            color: #001f3f; /* Azul escuro */
-        }
-
-        .button {
-            display: block;
-            background-color: white;
-            color: #001f3f;
-            padding: 15px 30px;
-            margin: 20px 0;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            border: 2px solid #001f3f;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #001f3f;
-            color: white;
-        }
-
-        .button-secondary {
-            background-color: white;
-            color: #001f3f;
-            border: 2px solid #001f3f;
-        }
-
-        .button-secondary:hover {
-            background-color: #001f3f;
+            text-align: center;
             color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Bem-vindo à Evo Consultorias</h1>
-        <a href="site.html" class="button">Acessar o Site</a>
-        <a href="certificados.html" class="button">Comprar Certificados Digitais</a>
-        <a href="contato.html" class="button-secondary">Contato</a>
-        <a href="login.html" class="button">Área do Cliente (Login)</a>
-    </div>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Evo Consultorias</h1>
+        <p>Evoluindo negócios, impulsionando futuros</p>
+    </header>
+
+    <!-- Seção de Serviços -->
+    <section>
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <img src="imagens/1.png" alt="Serviço 1">
+            <img src="imagens/2.png" alt="Serviço 2">
+            <img src="imagens/3.png" alt="Serviço 3">
+            <img src="imagens/4.png" alt="Serviço 4">
+            <img src="imagens/5.png" alt="Serviço 5">
+            <img src="imagens/6.png" alt="Serviço 6">
+            <img src="imagens/7.png" alt="Serviço 7">
+            <img src="imagens/8.png" alt="Serviço 8">
+            <img src="imagens/9.png" alt="Serviço 9">
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section>
+        <h2>Sobre Nós</h2>
+        <div class="about-us">
+            <p>A Evo é uma empresa especializada em consultoria empresarial e para pessoas físicas, com mais de 10 anos de experiência, que tem como objetivo auxiliar empreendedores e indivíduos a gerir seus negócios e finanças de forma eficiente e estratégica. Nossa equipe é composta por profissionais experientes e qualificados, prontos para oferecer soluções personalizadas e adequadas às necessidades de cada cliente.</p>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section class="clients-section">
+        <h2>Alguns dos nossos clientes.</h2>
+        <p>Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a primeira escolha das seguintes empresas:</p>
+        <img src="imagens/CLIENTES.png" alt="Clientes da Evo Consultorias">
+    </section>
+
+    <!-- Visão de Futuro -->
+    <section class="vision">
+        <p>Visualize um amanhã onde as fronteiras do seu negócio se expandem sem limites. Na Evo, transformamos essa visão em ação.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Evo Consultorias. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
