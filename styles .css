@@ -42,7 +42,7 @@ body {
 }
 
 .services-container img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
