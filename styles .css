@@ -1,70 +1,100 @@
 body {
+    background-color: #141414;
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fundo cinza claro */
 }
 
-header {
-    background-color: #2f384b; /* Cor do cabeçalho */
+.header {
+    background: url('./imagens/c1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 48px;
     color: white;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.section-title {
+    color: #d3d3d3;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-    text-align: center;
 }
 
-.logo {
-    width: 150px;
+.services-container img {
+    width: 80%;
     height: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.banner {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.banner img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-}
-
-section {
-    padding: 40px 20px;
-    margin: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
     text-align: center;
-    color: #2f384b;
 }
 
-footer {
-    background-color: #2f384b;
-    color: white;
+.clients-section {
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
+    margin: 50px;
+}
+
+.clients-section img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+}
+
+.vision-section {
+    background: url('./imagens/DESENHO_DA_LOGO_SEM_FUNDO.png') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.vision-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
+    background: rgba(20, 20, 20, 0.33);
+    z-index: 1;
+}
+
+.vision-section p {
+    position: relative;
+    font-size: 28px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+}
+
+.footer {
+    background: url('./imagens/r1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
 }
