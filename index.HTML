@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo Consultorias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <img src="imagens/Design sem nome (2).png" alt="Logo Evo Consultorias" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner ou imagem principal -->
+    <div class="banner">
+        <img src="imagens/1.png" alt="Banner Principal">
+    </div>
+
+    <!-- Seção de serviços -->
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <img src="imagens/SERVIÇOS OFERECIDOS.png" alt="Serviços">
+    </section>
+
+    <!-- Seção sobre a empresa -->
+    <section id="sobre">
+        <h2>Sobre a Evo Consultorias</h2>
+        <p>A Evo Consultorias oferece soluções completas em assessoria empresarial, ajudando sua empresa a crescer com eficiência e resultados.</p>
+    </section>
+
+    <!-- Seção de contato com formulário -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <p id="formMessage" style="display:none; color: green;">Obrigado por entrar em contato! Em breve retornaremos sua mensagem.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Evo Consultorias. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JS para interatividade do formulário -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Impede o envio real do formulário
+
+            // Pega os valores dos campos
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            
+            // Valida se todos os campos estão preenchidos
+            if(name === "" || email === "" || message === "") {
+                alert("Por favor, preencha todos os campos.");
+            } else {
+                // Exibe a mensagem de sucesso
+                document.getElementById("formMessage").style.display = "block";
+                document.getElementById("contactForm").reset(); // Limpa o formulário
+            }
+        });
+    </script>
+
+</body>
+</html>
